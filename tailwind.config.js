@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "cus-black": "#17153B",
-        "cus-dark-navy": "#2E236C",
-        "cus-light-navy": "#433D8B",
-        "cus-purple": "#C8ACD6",
+        "cus-beige": "#a58d82",
+        "cus-ivory": "#d4c4b7",
+        "cus-deep-brown": "#2c1b18",
+        "cus-maroon": "#5d2e2a",
+        "cur-red": "#8e3b36",
       },
     },
   },
