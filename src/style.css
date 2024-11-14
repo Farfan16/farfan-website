@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 3rem 0;
@@ -10,6 +14,5 @@ body {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(135deg, #2c1b18, #3e2723, #5d2e2a, #8e3b36);
-  scroll-behavior: smooth;
   color: #d4c4b7;
 }
