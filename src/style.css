@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #17153b;
+  background-image: linear-gradient(135deg, #2c1b18, #3e2723, #5d2e2a, #8e3b36);
   scroll-behavior: smooth;
-  color: white;
+  color: #d4c4b7;
 }
