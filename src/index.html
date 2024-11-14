@@ -7,6 +7,17 @@
     <title>Farfan Website</title>
   </head>
   <body>
+    <header class="w-full fixed top-0 bg-stone-100/5 flex flex-row justify-between items-center px-4 py-2 gap-2 shadow-md">
+      <div class="flex justify-end">
+        <img src="./img/Logo.png" class="w-8" alt="Farfan Logo" />
+      </div>
+      <div class="flex flex-row gap-4 justify-start text-cus-beige font-semibold">
+        <a href="#about">About</a>
+        <a href="#skillset">Skillset</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacts">Contacts</a>
+      </div>
+    </header>
     <!-- Hero -->
     <section
       id="hero"
@@ -32,6 +43,7 @@
 
     <!-- Little about me -->
     <section
+      id="about"
       class="flex flex-col justify-center items-center gap-8 m-auto px-16 py-12 w-full text-cus-beige bg-stone-100"
     >
       <h2 class="text-6xl font-semibold">Little About Me</h2>
@@ -57,7 +69,10 @@
     <!-- End of About -->
 
     <!-- Skill -->
-    <section class="flex flex-col items-center px-16 py-12 w-full">
+    <section
+      id="skillset"
+      class="flex flex-col items-center px-16 py-12 w-full"
+    >
       <h2 class="text-6xl font-semibold mb-8">Skill Set</h2>
       <div class="grid grid-cols-4 gap-10">
         <!-- HTML Card -->
