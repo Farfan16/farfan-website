@@ -8,7 +8,7 @@ module.exports = {
         "cus-ivory": "#d4c4b7",
         "cus-deep-brown": "#2c1b18",
         "cus-maroon": "#5d2e2a",
-        "cur-red": "#8e3b36",
+        "cus-red": "#8e3b36",
       },
     },
   },
