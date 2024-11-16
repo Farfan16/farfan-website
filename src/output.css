@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -562,6 +562,10 @@ video {
   top: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -672,20 +676,12 @@ video {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-start {
   justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -755,36 +751,36 @@ video {
 
 .border-cus-beige {
   --tw-border-opacity: 1;
-  border-color: rgb(165 141 130 / var(--tw-border-opacity));
+  border-color: rgb(165 141 130 / var(--tw-border-opacity, 1));
 }
 
 .border-cus-ivory {
   --tw-border-opacity: 1;
-  border-color: rgb(212 196 183 / var(--tw-border-opacity));
+  border-color: rgb(212 196 183 / var(--tw-border-opacity, 1));
 }
 
 .bg-cus-deep-brown {
   --tw-bg-opacity: 1;
-  background-color: rgb(44 27 24 / var(--tw-bg-opacity));
+  background-color: rgb(44 27 24 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cus-maroon {
   --tw-bg-opacity: 1;
-  background-color: rgb(93 46 42 / var(--tw-bg-opacity));
+  background-color: rgb(93 46 42 / var(--tw-bg-opacity, 1));
 }
 
 .bg-stone-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
-}
-
-.bg-stone-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
 }
 
 .bg-stone-100\/5 {
   background-color: rgb(245 245 244 / 0.05);
+}
+
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity, 1));
 }
 
 .fill-cus-ivory {
@@ -800,13 +796,14 @@ video {
   padding: 0.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8 {
@@ -832,11 +829,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pb-4 {
@@ -887,7 +879,7 @@ video {
 
 .text-cus-beige {
   --tw-text-opacity: 1;
-  color: rgb(165 141 130 / var(--tw-text-opacity));
+  color: rgb(165 141 130 / var(--tw-text-opacity, 1));
 }
 
 .shadow-2xl {
@@ -902,16 +894,28 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -927,4 +931,17 @@ body {
   align-items: center;
   background-image: linear-gradient(135deg, #2c1b18, #3e2723, #5d2e2a, #8e3b36);
   color: #d4c4b7;
+}
+
+#logo, #sections {
+  transform: translateX(0);
+  transition: transform .3s ease-in-out;
+}
+
+#logo.scrolled {
+  transform: translateX(-30vw);
+}
+
+#sections.scrolled {
+  transform: translateX(30vw);
 }

@@ -16,3 +16,16 @@ body {
   background-image: linear-gradient(135deg, #2c1b18, #3e2723, #5d2e2a, #8e3b36);
   color: #d4c4b7;
 }
+
+#logo, #sections {
+  transform: translateX(0);
+  transition: transform .3s ease-in-out;
+}
+
+#logo.scrolled {
+  transform: translateX(-30vw);
+}
+
+#sections.scrolled {
+  transform: translateX(30vw);
+}
