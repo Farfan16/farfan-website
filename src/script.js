@@ -5,7 +5,7 @@ const sections = document.querySelector("#sections");
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
 
-  if (scrollPos > 0) {
+  if (scrollPos > 190) {
     logo.classList.add("scrolled");
     sections.classList.add("scrolled");
   } else {
