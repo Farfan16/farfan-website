@@ -10,6 +10,9 @@ module.exports = {
         "cus-maroon": "#5d2e2a",
         "cus-red": "#8e3b36",
       },
+      objectPosition: {
+        'center-bottom': 'center 70%',
+      }
     },
   },
   plugins: [],
