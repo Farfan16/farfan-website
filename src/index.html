@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <!-- <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css"> -->
     <link
       rel="icon"
       href="./img/Logo-Circle.png"
@@ -46,7 +47,7 @@
     <!-- Hero -->
     <section
       id="hero"
-      class="h-screen max-h-[95vh] m-auto flex flex-row gap-8 justify-center items-center"
+      class="h-screen max-h-[95vh] m-auto flex flex-row gap-14 justify-center items-center"
     >
       <div class="border-cus-ivory border-2 rounded-full shadow-2xl">
         <img
@@ -55,6 +56,7 @@
           class="object-cover rounded-full w-80 h-80"
         />
       </div>
+      <div class="h-52 border-2 border-cus-ivory"></div>
       <div class="flex flex-col gap-1 justify-start items-start max-w-2xl">
         <h2 class="text-7xl">Hi, I'm Farrel Fanny.</h2>
         <h3 class="text-4xl">I'm a Frontend Developer.</h3>
@@ -69,10 +71,10 @@
     <!-- Little about me -->
     <section
       id="about"
-      class="flex flex-col justify-center items-center gap-8 m-auto px-16 py-12 w-full text-cus-beige bg-stone-100"
+      class="flex flex-row justify-center items-center gap-8 m-auto px-16 py-12 w-full h-full text-cus-beige bg-stone-100"
     >
-      <h2 class="text-6xl font-semibold">Little About Me</h2>
-      <div class="flex flex-row justify-center items-center gap-10">
+      <div class="flex flex-col justify-center items-start w-2/5 gap-12">
+        <h2 class="text-6xl text-left font-semibold">Little About Me</h2>
         <div id="desc" class="text-wrap max-w-lg">
           <p class="text-lg">
             You can call me Farrel. I'm a frontend or web developer with about 2
@@ -82,13 +84,15 @@
             to know my skill set and portfolio, keep scrolling! 😉
           </p>
         </div>
-        <div class="border-cus-beige border-2 rounded-full shadow-2xl">
-          <img
-            src="./img/tiduran.jpg"
-            alt="Picture of Farrel"
-            class="object-cover rounded-full w-80 h-80"
-          />
-        </div>
+      </div>
+      <div
+        class="border-4 border-l-cus-beige border-b-cus-beige shadow-2xl w-[28rem] h-[30rem] relative"
+      >
+        <img
+          src="./img/tiduran.jpg"
+          alt="Picture of Farrel"
+          class="object-cover w-full h-full object-center-bottom"
+        />
       </div>
     </section>
     <!-- End of About -->
@@ -99,7 +103,9 @@
       class="flex flex-col items-center px-16 py-12 w-full"
     >
       <h2 class="text-6xl font-semibold mb-8">Skill Set</h2>
-      <div class="grid grid-cols-4 gap-10">
+      <div
+        class="grid grid-cols-4 gap-16 py-10 px-44 border-4 shadow-2xl border-cus-maroon rounded-xl bg-cus-ivory"
+      >
         <!-- HTML Card -->
         <div
           id="card"
