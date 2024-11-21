@@ -11,8 +11,11 @@ module.exports = {
         "cus-red": "#8e3b36",
       },
       objectPosition: {
-        'center-bottom': 'center 70%',
-      }
+        "center-bottom": "center 70%",
+      },
+      boxShadow: {
+        "l-shadow": "-5px 0px 8px 0px rgba(0,0,0,0.4)",
+      },
     },
   },
   plugins: [],
