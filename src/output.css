@@ -777,16 +777,20 @@ video {
   overflow: scroll;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .overscroll-auto {
   overscroll-behavior: auto;
 }
 
-.overscroll-contain {
-  overscroll-behavior: contain;
-}
-
-.overscroll-none {
-  overscroll-behavior: none;
+.overscroll-y-auto {
+  overscroll-behavior-y: auto;
 }
 
 .text-wrap {
@@ -981,6 +985,10 @@ video {
   padding-left: 0.5rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1014,12 +1022,41 @@ video {
   line-height: 1.75rem;
 }
 
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-cus-beige {
@@ -1094,11 +1131,13 @@ body {
   align-items: center;
   background-image: linear-gradient(135deg, #2c1b18, #3e2723, #5d2e2a, #8e3b36);
   color: #d4c4b7;
+  font-family: "Karla", sans-serif;
 }
 
-#logo, #sections {
+#logo,
+#sections {
   transform: translateX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 #logo.scrolled {
