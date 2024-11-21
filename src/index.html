@@ -401,396 +401,407 @@
     <!-- Portfolio -->
     <section
       id="portfolio"
-      class="flex flex-col items-center gap-6 w-full py-10 bg-stone-200 text-cus-beige"
+      class="flex flex-row items-stretch w-full h-screen my-10 text-cus-beige bg-stone-200"
     >
-      <div class="flex flex-col items-center gap-2">
+      <div
+        class="flex flex-col w-1/3 min-h-full justify-center items-center gap-2"
+      >
         <h2 class="text-6xl">Portfolio</h2>
         <h3 class="text-lg">Click the image to go to the website.</h3>
       </div>
 
-      <!-- Nayaka -->
       <div
-        id="port-card"
-        class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-1/2 h-60 border-2 border-cus-beige"
+      id="port-side"
+        class="flex flex-col gap-6 w-2/3 min-h-full p-8 justify-start items-center bg-stone-300 rounded-l-xl shadow-l-shadow overflow-scroll overscroll-auto"
       >
+        <!-- Nayaka -->
         <div
-          id="screenshot"
-          class="p-1 w-2/5 h-full bg-cus-deep-brown rounded-s-xl overflow-hidden"
-        >
-          <a href="https://nayakatransportama.co.id/about" target="_blank">
-            <img
-              src="./img/screenshot/nayaka.png"
-              alt="Screenshot Nayaka Transportama"
-              class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
-            />
-          </a>
-        </div>
-
-        <div
-          id="port-desc"
-          class="flex flex-col items-start justify-between w-3/5 pb-4"
+          id="port-card"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
         >
           <div
-            id="web-name"
-            class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            id="screenshot"
+            class="p-1 w-2/5 h-full bg-cus-deep-brown rounded-s-xl overflow-hidden"
           >
-            <h1 class="text-3xl font-semibold">Nayaka Transportama</h1>
+            <a href="https://nayakatransportama.co.id/about" target="_blank">
+              <img
+                src="./img/screenshot/nayaka.png"
+                alt="Screenshot Nayaka Transportama"
+                class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+              />
+            </a>
           </div>
-          <div id="web-desc" class="pl-2">
-            <p class="text-xl font-normal">
-              This is 1 of a few project that my friends and I did. We only did
-              the layout and UI part. My work is to make the “About Us”.
-            </p>
-          </div>
-          <div id="web-tech" class="pl-2 flex flex-row gap-2">
-            <p class="text-md">Tech:</p>
-            <div class="grid grid-cols-3 gap-4">
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-[#f06529]"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>HTML5</title>
-                <path
-                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
-                />
-              </svg>
 
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-[#1572B6]"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>CSS3</title>
-                <path
-                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
-                />
-              </svg>
+          <div
+            id="port-desc"
+            class="flex flex-col items-start justify-between w-3/5 pb-4"
+          >
+            <div
+              id="web-name"
+              class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            >
+              <h1 class="text-2xl font-semibold">Nayaka Transportama</h1>
+            </div>
+            <div id="web-desc" class="px-2">
+              <p class="text-md font-normal">
+                This is 1 of a few project that my friends and I did. We only
+                did the layout and UI part. My work is to make the “About Us”.
+              </p>
+            </div>
+            <div id="web-tech" class="pl-2 flex flex-row gap-2">
+              <p class="text-md">Tech:</p>
+              <div class="grid grid-cols-3 gap-4">
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-[#f06529]"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>HTML5</title>
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                  />
+                </svg>
 
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-[#F7DF1E]"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>JavaScript</title>
-                <path
-                  d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
-                />
-              </svg>
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-[#1572B6]"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>CSS3</title>
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+                  />
+                </svg>
+
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-[#F7DF1E]"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>JavaScript</title>
+                  <path
+                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of Nayaka -->
+        <!-- End of Nayaka  -->
 
-      <!-- Weather -->
-      <div
-        id="port-card"
-        class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-1/2 h-60 border-2 border-cus-beige"
-      >
+        <!-- Weather -->
         <div
-          id="screenshot"
-          class="p-1 w-2/5 h-full relative bg-cus-deep-brown rounded-s-xl overflow-hidden"
-        >
-          <a href="https://farfan-weather-next.vercel.app/" target="_blank">
-            <img
-              src="./img/screenshot/weather.png"
-              alt="Screenshot Weather App"
-              class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
-            />
-          </a>
-        </div>
-
-        <div
-          id="port-desc"
-          class="flex flex-col items-start justify-between w-3/5 pb-4"
+          id="port-card"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
         >
           <div
-            id="web-name"
-            class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            id="screenshot"
+            class="p-1 w-2/5 h-full relative bg-cus-deep-brown rounded-s-xl overflow-hidden"
           >
-            <h1 class="text-3xl font-semibold">Weather App</h1>
+            <a href="https://farfan-weather-next.vercel.app/" target="_blank">
+              <img
+                src="./img/screenshot/weather.png"
+                alt="Screenshot Weather App"
+                class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+              />
+            </a>
           </div>
-          <div id="web-desc" class="px-2">
-            <p class="text-xl">
-              A web to give information about current weather on the searched
-              area. It&#39;ll give info about the weather, temprature, and also
-              show the date.
-            </p>
-          </div>
-          <div id="web-tech" class="pl-2 flex flex-row gap-2">
-            <p class="text-md">Tech:</p>
-            <div class="grid grid-cols-2 gap-4">
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Next.js</title>
-                <path
-                  d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
-                />
-              </svg>
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                heigth="24"
-                class="fill-[#06B6D4]"
-                viewBox="0 -12 56 56"
-              >
-                <title>TailwindCSS</title>
-                <path
-                  d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                />
-              </svg>
+          <div
+            id="port-desc"
+            class="flex flex-col items-start justify-between w-3/5 pb-4"
+          >
+            <div
+              id="web-name"
+              class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            >
+              <h1 class="text-2xl font-semibold">Weather App</h1>
+            </div>
+            <div id="web-desc" class="px-2">
+              <p class="text-md">
+                A web to give information about current weather on the searched
+                area. It&#39;ll give info about the weather, temprature, and
+                also show the date.
+              </p>
+            </div>
+            <div id="web-tech" class="pl-2 flex flex-row gap-2">
+              <p class="text-md">Tech:</p>
+              <div class="grid grid-cols-2 gap-4">
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Next.js</title>
+                  <path
+                    d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  heigth="24"
+                  class="fill-[#06B6D4]"
+                  viewBox="0 -12 56 56"
+                >
+                  <title>TailwindCSS</title>
+                  <path
+                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of Weather -->
+        <!-- End of Weather -->
 
-      <!-- Rest Countries -->
-      <div
-        id="port-card"
-        class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-1/2 h-60 border-2 border-cus-beige"
-      >
+        <!-- Rest Countries -->
         <div
-          id="screenshot"
-          class="p-1 w-2/5 h-full relative bg-cus-deep-brown rounded-s-xl overflow-hidden"
-        >
-          <a href="https://farfan-rest-countries.vercel.app/" target="_blank">
-            <img
-              src="./img/screenshot/countries.png"
-              alt="Screenshot REST Countries"
-              class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
-            />
-          </a>
-        </div>
-
-        <div
-          id="port-desc"
-          class="flex flex-col items-start justify-between w-3/5 pb-4"
+          id="port-card"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
         >
           <div
-            id="web-name"
-            class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            id="screenshot"
+            class="p-1 w-2/5 h-full relative bg-cus-deep-brown rounded-s-xl overflow-hidden"
           >
-            <h1 class="text-3xl font-semibold">REST Countries</h1>
+            <a href="https://farfan-rest-countries.vercel.app/" target="_blank">
+              <img
+                src="./img/screenshot/countries.png"
+                alt="Screenshot REST Countries"
+                class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+              />
+            </a>
           </div>
-          <div id="web-desc" class="px-2">
-            <p class="text-xl">
-              This web shows a list of countries that are get from REST
-              Countries API. It also could show the detail of the country if the
-              card is clicked.
-            </p>
-          </div>
-          <div id="web-tech" class="pl-2 flex flex-row gap-2">
-            <p class="text-md">Tech:</p>
-            <div class="grid grid-cols-2 gap-4">
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Next.js</title>
-                <path
-                  d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
-                />
-              </svg>
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                heigth="24"
-                class="fill-[#06B6D4]"
-                viewBox="0 -12 56 56"
-              >
-                <title>TailwindCSS</title>
-                <path
-                  d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                />
-              </svg>
+          <div
+            id="port-desc"
+            class="flex flex-col items-start justify-between w-3/5 pb-4"
+          >
+            <div
+              id="web-name"
+              class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            >
+              <h1 class="text-2xl font-semibold">REST Countries</h1>
+            </div>
+            <div id="web-desc" class="px-2">
+              <p class="text-md">
+                This web shows a list of countries that are get from REST
+                Countries API. It also could show the detail of the country if
+                the card is clicked.
+              </p>
+            </div>
+            <div id="web-tech" class="pl-2 flex flex-row gap-2">
+              <p class="text-md">Tech:</p>
+              <div class="grid grid-cols-2 gap-4">
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Next.js</title>
+                  <path
+                    d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  heigth="24"
+                  class="fill-[#06B6D4]"
+                  viewBox="0 -12 56 56"
+                >
+                  <title>TailwindCSS</title>
+                  <path
+                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of Rest Countries -->
+        <!-- End of Rest Countries -->
 
-      <!-- Social Links -->
-      <div
-        id="port-card"
-        class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-1/2 h-60 border-2 border-cus-beige"
-      >
+        <!-- Social Links -->
         <div
-          id="screenshot"
-          class="p-1 w-2/5 h-full bg-cus-deep-brown rounded-s-xl overflow-hidden"
-        >
-          <a href="https://farfansocials.vercel.app/" target="_blank">
-            <img
-              src="./img/screenshot/socials.png"
-              alt="Screenshot Social Links"
-              class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
-            />
-          </a>
-        </div>
-
-        <div
-          id="port-desc"
-          class="flex flex-col items-start justify-between w-3/5 pb-4"
+          id="port-card"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
         >
           <div
-            id="web-name"
-            class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            id="screenshot"
+            class="p-1 w-2/5 h-full bg-cus-deep-brown rounded-s-xl overflow-hidden"
           >
-            <h1 class="text-3xl font-semibold">Social Links</h1>
+            <a href="https://farfansocials.vercel.app/" target="_blank">
+              <img
+                src="./img/screenshot/socials.png"
+                alt="Screenshot Social Links"
+                class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+              />
+            </a>
           </div>
-          <div id="web-desc" class="pl-2">
-            <p class="text-xl font-normal">
-              This is a social media links that has links that will direct to my
-              social media. I also implement a language switcher between English
-              and Indonesia and a dark mode toggler.
-            </p>
-          </div>
-          <div id="web-tech" class="pl-2 flex flex-row gap-2">
-            <p class="text-md">Tech:</p>
-            <div class="grid grid-cols-3 gap-4">
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-[#f06529]"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>HTML5</title>
-                <path
-                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
-                />
-              </svg>
 
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-[#CC6699]"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Sass</title>
-                <path
-                  d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM9.615 15.998c.175.645.156 1.248-.024 1.792l-.065.18c-.024.061-.052.12-.078.176-.14.29-.326.56-.555.81-.698.759-1.672 1.047-2.09.805-.45-.262-.226-1.335.584-2.19.871-.918 2.12-1.509 2.12-1.509v-.003l.108-.061zm9.911-10.861c-.542-2.133-4.077-2.834-7.422-1.645-1.989.707-4.144 1.818-5.693 3.267C4.568 8.48 4.275 9.98 4.396 10.607c.427 2.211 3.457 3.657 4.703 4.73v.006c-.367.18-3.056 1.529-3.686 2.925-.675 1.47.105 2.521.615 2.655 1.575.436 3.195-.36 4.065-1.649.84-1.261.766-2.881.404-3.676.496-.135 1.08-.195 1.83-.104 2.101.24 2.521 1.56 2.43 2.1-.09.539-.523.854-.674.944-.15.091-.195.12-.181.181.015.09.091.09.21.075.165-.03 1.096-.45 1.141-1.471.045-1.29-1.186-2.729-3.375-2.7-.9.016-1.471.091-1.875.256-.03-.045-.061-.075-.105-.105-1.35-1.455-3.855-2.475-3.75-4.41.03-.705.285-2.564 4.8-4.814 3.705-1.846 6.661-1.335 7.171-.21.733 1.604-1.576 4.59-5.431 5.024-1.47.165-2.235-.404-2.431-.615-.209-.225-.239-.24-.314-.194-.12.06-.045.255 0 .375.12.3.585.825 1.396 1.095.704.225 2.43.359 4.5-.45 2.324-.899 4.139-3.405 3.614-5.505l.073.067z"
-                />
-              </svg>
+          <div
+            id="port-desc"
+            class="flex flex-col items-start justify-between w-3/5 pb-4"
+          >
+            <div
+              id="web-name"
+              class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            >
+              <h1 class="text-2xl font-semibold">Social Links</h1>
+            </div>
+            <div id="web-desc" class="pl-2">
+              <p class="text-md font-normal">
+                This is a social media links that has links that will direct to
+                my social media. I also implement a language switcher between
+                English and Indonesia and a dark mode toggler.
+              </p>
+            </div>
+            <div id="web-tech" class="pl-2 flex flex-row gap-2">
+              <p class="text-md">Tech:</p>
+              <div class="grid grid-cols-3 gap-4">
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-[#f06529]"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>HTML5</title>
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                  />
+                </svg>
 
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-[#F7DF1E]"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>JavaScript</title>
-                <path
-                  d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
-                />
-              </svg>
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-[#CC6699]"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Sass</title>
+                  <path
+                    d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM9.615 15.998c.175.645.156 1.248-.024 1.792l-.065.18c-.024.061-.052.12-.078.176-.14.29-.326.56-.555.81-.698.759-1.672 1.047-2.09.805-.45-.262-.226-1.335.584-2.19.871-.918 2.12-1.509 2.12-1.509v-.003l.108-.061zm9.911-10.861c-.542-2.133-4.077-2.834-7.422-1.645-1.989.707-4.144 1.818-5.693 3.267C4.568 8.48 4.275 9.98 4.396 10.607c.427 2.211 3.457 3.657 4.703 4.73v.006c-.367.18-3.056 1.529-3.686 2.925-.675 1.47.105 2.521.615 2.655 1.575.436 3.195-.36 4.065-1.649.84-1.261.766-2.881.404-3.676.496-.135 1.08-.195 1.83-.104 2.101.24 2.521 1.56 2.43 2.1-.09.539-.523.854-.674.944-.15.091-.195.12-.181.181.015.09.091.09.21.075.165-.03 1.096-.45 1.141-1.471.045-1.29-1.186-2.729-3.375-2.7-.9.016-1.471.091-1.875.256-.03-.045-.061-.075-.105-.105-1.35-1.455-3.855-2.475-3.75-4.41.03-.705.285-2.564 4.8-4.814 3.705-1.846 6.661-1.335 7.171-.21.733 1.604-1.576 4.59-5.431 5.024-1.47.165-2.235-.404-2.431-.615-.209-.225-.239-.24-.314-.194-.12.06-.045.255 0 .375.12.3.585.825 1.396 1.095.704.225 2.43.359 4.5-.45 2.324-.899 4.139-3.405 3.614-5.505l.073.067z"
+                  />
+                </svg>
+
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-[#F7DF1E]"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>JavaScript</title>
+                  <path
+                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of Social Links -->
+        <!-- End of Social Links -->
 
-      <!-- Advice Generator -->
-      <div
-        id="port-card"
-        class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-1/2 h-60 border-2 border-cus-beige"
-      >
+        <!-- Advice Generator -->
         <div
-          id="screenshot"
-          class="p-1 w-2/5 h-full relative bg-cus-deep-brown rounded-s-xl overflow-hidden"
-        >
-          <a href="https://farfan-advicegenerator.vercel.app/" target="_blank">
-            <img
-              src="./img/screenshot/advicegen.png"
-              alt="Screenshot Advice Generator"
-              class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
-            />
-          </a>
-        </div>
-
-        <div
-          id="port-desc"
-          class="flex flex-col items-start justify-between w-3/5 pb-4"
+          id="port-card"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
         >
           <div
-            id="web-name"
-            class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            id="screenshot"
+            class="p-1 w-2/5 h-full relative bg-cus-deep-brown rounded-s-xl overflow-hidden"
           >
-            <h1 class="text-3xl font-semibold">Advice Generator</h1>
+            <a
+              href="https://farfan-advicegenerator.vercel.app/"
+              target="_blank"
+            >
+              <img
+                src="./img/screenshot/advicegen.png"
+                alt="Screenshot Advice Generator"
+                class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+              />
+            </a>
           </div>
-          <div id="web-desc" class="px-2">
-            <p class="text-xl">
-              This is an advice generator that could generate random advice the
-              first time user enter it, and it also generate if the button is
-              clicked.
-            </p>
-          </div>
-          <div id="web-tech" class="pl-2 flex flex-row gap-2">
-            <p class="text-md">Tech:</p>
-            <div class="grid grid-cols-2 gap-4">
-              <svg
-                role="img"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Next.js</title>
-                <path
-                  d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
-                />
-              </svg>
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                heigth="24"
-                class="fill-[#06B6D4]"
-                viewBox="0 -12 56 56"
-              >
-                <title>TailwindCSS</title>
-                <path
-                  d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                />
-              </svg>
+          <div
+            id="port-desc"
+            class="flex flex-col items-start justify-between w-3/5 pb-4"
+          >
+            <div
+              id="web-name"
+              class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
+            >
+              <h1 class="text-2xl font-semibold">Advice Generator</h1>
+            </div>
+            <div id="web-desc" class="px-2">
+              <p class="text-md">
+                This is an advice generator that could generate random advice
+                the first time user enter it, and it also generate if the button
+                is clicked.
+              </p>
+            </div>
+            <div id="web-tech" class="pl-2 flex flex-row gap-2">
+              <p class="text-md">Tech:</p>
+              <div class="grid grid-cols-2 gap-4">
+                <svg
+                  role="img"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Next.js</title>
+                  <path
+                    d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  heigth="24"
+                  class="fill-[#06B6D4]"
+                  viewBox="0 -12 56 56"
+                >
+                  <title>TailwindCSS</title>
+                  <path
+                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
+        <!-- End of Advice Generator -->
       </div>
     </section>
     <!-- End of Portfolio -->
 
     <!-- Contacts -->
     <section id="contacts" class="flex flex-col gap-10 items-center py-8">
-      <h1 class="text-3xl">My Contacts and Socials</h1>
+      <h1 class="text-2xl">My Contacts and Socials</h1>
       <div class="grid grid-cols-4 gap-16">
         <a href="mailto:farrelirsyadfanny@gmail.com" target="_blank">
           <svg
