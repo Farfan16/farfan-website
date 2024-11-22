@@ -23,7 +23,7 @@
     <!-- Header -->
     <header
       id="header"
-      class="w-full fixed top-0 bg-stone-100/5 flex flex-row transition ease-in-out justify-center items-center px-4 py-2 gap-2 shadow-md z-10"
+      class="w-full fixed top-0 bg-stone-100/5 lg:flex lg:flex-row transition ease-in-out justify-center items-center px-4 py-2 gap-2 shadow-md z-10 hidden"
     >
       <div id="logo" class="logo">
         <a href="">
@@ -48,25 +48,75 @@
         >
       </div>
     </header>
+    <header class="lg:hidden fixed top-0 block w-full z-10">
+      <nav class="flex flex-row justify-between w-full px-4 py-2 bg-cus-deep-brown/75">
+        <div id="logo-mobile" class="logo">
+          <a href="">
+            <img src="./img/Logo.png" class="w-8" alt="Farfan Logo" />
+          </a>
+        </div>
+        <button onclick="openNavBar()">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            width="32px"
+            height="32px"
+            viewBox="0 0 24 24"
+            class="stroke-cus-beige"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 18L20 18"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 6L20 6"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </nav>
+      <!-- <div class="flex flex-col justify-start items-center w-full gap-4 bg-cus-deep-brown/75">
+        <a href="#about" class="hover:text-cus-ivory active:text-cus-maroon"
+          >About</a
+        >
+        <a href="#skillset" class="hover:text-cus-ivory active:text-cus-maroon"
+          >Skillset</a
+        >
+        <a href="#portfolio" class="hover:text-cus-ivory active:text-cus-maroon"
+          >Portfolio</a
+        >
+        <a href="#contacts" class="hover:text-cus-ivory active:text-cus-maroon"
+          >Contacts</a
+        >
+      </div> -->
+    </header>
     <!-- End of Header -->
 
     <!-- Hero -->
     <section
       id="hero"
-      class="h-screen max-h-[95vh] m-auto flex flex-row gap-14 justify-center items-center"
+      class="h-screen max-h-[95vh] m-auto lg:p-0 px-6 flex lg:flex-row flex-col gap-14 justify-center items-center"
     >
       <div class="border-cus-ivory border-2 rounded-full shadow-2xl">
         <img
           src="./img/MyPicture.jpeg"
           alt="Picture of Farrel"
-          class="object-cover rounded-full w-80 h-80"
+          class="object-cover rounded-full lg:w-80 lg:h-80 w-72 h-72"
         />
       </div>
-      <div class="h-52 border-2 border-cus-ivory"></div>
+      <div class="lg:block hidden h-52 border-2 border-cus-ivory"></div>
+      <div class="lg:hidden block w-40 border-2 border-cus-ivory"></div>
       <div class="flex flex-col gap-1 justify-start items-start max-w-2xl">
-        <h2 class="text-7xl">Hi, I'm Farrel Fanny.</h2>
-        <h3 class="text-5xl">I'm a Frontend Developer.</h3>
-        <p class="text-xl mt-6">
+        <h2 class="lg:text-7xl text-4xl">Hi, I'm Farrel Fanny.</h2>
+        <h3 class="lg:text-5xl text-2xl">I'm a Frontend Developer.</h3>
+        <p class="lg:text-xl text-lg mt-6">
           I have 2 years of experience in frontend developed a website. Scroll
           down to see tech that I used and some of my portfolio.
         </p>
@@ -77,12 +127,16 @@
     <!-- Little about me -->
     <section
       id="about"
-      class="flex flex-row justify-center items-center gap-8 m-auto px-16 py-12 w-full h-full text-cus-beige bg-stone-100"
+      class="flex lg:flex-row flex-col justify-center items-center gap-8 m-auto lg:px-16 lg:py-12 px-6 py-10 w-full h-full text-cus-beige bg-stone-100"
     >
-      <div class="flex flex-col justify-center items-start w-2/5 gap-12">
-        <h2 class="text-7xl text-left font-semibold">Little About Me</h2>
+      <div
+        class="flex flex-col justify-center items-start lg:w-2/5 w-full gap-12"
+      >
+        <h2 class="lg:text-7xl text-5xl text-left font-semibold">
+          Little About Me
+        </h2>
         <div id="desc" class="text-wrap max-w-lg">
-          <p class="text-xl">
+          <p class="lg:text-xl text-lg">
             You can call me Farrel. I'm a frontend or web developer with about 2
             years of freelance experience, and I'm based in Indonesia. I got my
             degree in computer science in 2023, and although my experience is in
@@ -92,12 +146,13 @@
         </div>
       </div>
       <div
-        class="border-4 border-l-cus-beige border-b-cus-beige shadow-2xl w-[28rem] h-[30rem] relative"
+        class="lg:border-4 lg:border-l-cus-beige lg:border-b-cus-beige border-2 border-cus-beige shadow-2xl lg:w-[28rem] lg:h-[30rem] w-80 h-72 relative"
       >
         <img
           src="./img/tiduran.jpg"
           alt="Picture of Farrel"
           class="object-cover w-full h-full object-center-bottom"
+          loading="lazy"
         />
       </div>
     </section>
@@ -106,11 +161,11 @@
     <!-- Skill -->
     <section
       id="skillset"
-      class="flex flex-col items-center px-16 py-12 w-full"
+      class="flex flex-col items-center md:px-16 py-12 w-full"
     >
-      <h2 class="text-7xl font-semibold mb-8">Skill Set</h2>
+      <h2 class="lg:text-7xl text-5xl font-semibold mb-8">Skill Set</h2>
       <div
-        class="grid grid-cols-4 gap-16 py-10 px-44 border-4 shadow-2xl border-cus-maroon rounded-xl bg-cus-ivory"
+        class="md:grid md:grid-cols-4 flex flex-row justify-start items-start lg:gap-16 gap-10 py-10 lg:px-44 px-4 w-full overflow-auto overscroll-auto border-4 shadow-2xl border-cus-maroon rounded-xl bg-cus-ivory"
       >
         <!-- HTML Card -->
         <div
@@ -319,6 +374,7 @@
             <p class="text-lg font-semibold">SCSS</p>
           </div>
         </div>
+        <!-- End of SASS Card -->
 
         <!-- PHP Card -->
         <div
@@ -352,7 +408,7 @@
         <!-- Swift Card -->
         <div
           id="card"
-          class="flex flex-col col-start-2 justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#E5E5E5] hover:scale-110 hover:-translate-y-1 duration-300"
+          class="flex flex-col md:col-start-2 justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#E5E5E5] hover:scale-110 hover:-translate-y-1 duration-300"
         >
           <div
             id="logo"
@@ -417,23 +473,26 @@
     <!-- Portfolio -->
     <section
       id="portfolio"
-      class="flex flex-row items-stretch w-full h-screen my-10 text-cus-beige bg-stone-200"
+      class="flex lg:flex-row flex-col items-stretch w-full h-screen my-10 text-cus-beige bg-stone-200"
     >
       <div
-        class="flex flex-col w-1/3 min-h-full justify-center items-center gap-2"
+        class="flex flex-col lg:w-1/3 w-full lg:min-h-full h-1/4 justify-center items-center gap-2"
       >
-        <h2 class="text-7xl">Portfolio</h2>
-        <h3 class="text-xl">Click the image to go to the website.</h3>
+        <h2 class="lg:text-7xl text-5xl font-semibold">Portfolio</h2>
+        <h3 class="text-xl">
+          <span class="lg:block hidden">Click</span>
+          <span class="lg:hidden">Tap</span> the image to go to the website.
+        </h3>
       </div>
 
       <div
         id="port-side"
-        class="flex flex-col gap-6 w-2/3 min-h-full p-8 justify-start items-center bg-stone-300 rounded-l-xl shadow-l-shadow overflow-y-auto overscroll-y-auto"
+        class="flex flex-col gap-6 lg:w-2/3 w-full lg:min-h-full h-3/4 lg:p-8 p-6 justify-start items-center bg-stone-300 rounded-l-xl shadow-l-shadow overflow-y-auto overscroll-y-auto"
       >
         <!-- Nayaka -->
         <div
           id="port-card"
-          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg lg:w-3/4 w-full h-60 border-2 border-cus-beige"
         >
           <div
             id="screenshot"
@@ -444,6 +503,7 @@
                 src="./img/screenshot/nayaka.png"
                 alt="Screenshot Nayaka Transportama"
                 class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+                loading="lazy"
               />
             </a>
           </div>
@@ -456,23 +516,25 @@
               id="web-name"
               class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
             >
-              <h1 class="text-2xl font-semibold">Nayaka Transportama</h1>
+              <h1 class="lg:text-2xl text-xl font-semibold">
+                Nayaka Transportama
+              </h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="text-lg font-normal">
+              <p class="lg:text-lg text-sm font-normal">
                 This is 1 of a few project that my friends and I did. We only
                 did the layout and UI part. My work is to make the “About Us”.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="text-lg">Tech:</p>
-              <div class="grid grid-cols-3 gap-4">
+              <p class="lg:text-lg text-sm">Tech:</p>
+              <div class="grid grid-cols-3 lg:gap-4 gap-1">
                 <svg
                   role="img"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-[#f06529]"
+                  class="fill-[#f06529] lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>HTML5</title>
@@ -486,7 +548,7 @@
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-[#1572B6]"
+                  class="fill-[#1572B6] lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>CSS3</title>
@@ -500,7 +562,7 @@
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-[#F7DF1E]"
+                  class="fill-[#F7DF1E] lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>JavaScript</title>
@@ -517,7 +579,7 @@
         <!-- Weather -->
         <div
           id="port-card"
-          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg lg:w-3/4 w-full h-60 border-2 border-cus-beige"
         >
           <div
             id="screenshot"
@@ -528,6 +590,7 @@
                 src="./img/screenshot/weather.png"
                 alt="Screenshot Weather App"
                 class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+                loading="lazy"
               />
             </a>
           </div>
@@ -540,24 +603,24 @@
               id="web-name"
               class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
             >
-              <h1 class="text-2xl font-semibold">Weather App</h1>
+              <h1 class="lg:text-2xl text-xl font-semibold">Weather App</h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="text-lg">
+              <p class="lg:text-lg text-sm">
                 A web to give information about current weather on the searched
                 area. It&#39;ll give info about the weather, temprature, and
                 also show the date.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="text-lg">Tech:</p>
-              <div class="grid grid-cols-2 gap-4">
+              <p class="lg:text-lg text-sm">Tech:</p>
+              <div class="grid grid-cols-2 lg:gap-4 gap-1">
                 <svg
                   role="img"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-white"
+                  class="fill-white lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>Next.js</title>
@@ -570,7 +633,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   heigth="24"
-                  class="fill-[#06B6D4]"
+                  class="fill-[#06B6D4] lg:w-6 w-4 md:translate-y-0 translate-y-[4px]"
                   viewBox="0 -12 56 56"
                 >
                   <title>TailwindCSS</title>
@@ -587,7 +650,7 @@
         <!-- Rest Countries -->
         <div
           id="port-card"
-          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg lg:w-3/4 w-full h-60 border-2 border-cus-beige"
         >
           <div
             id="screenshot"
@@ -598,6 +661,7 @@
                 src="./img/screenshot/countries.png"
                 alt="Screenshot REST Countries"
                 class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+                loading="lazy"
               />
             </a>
           </div>
@@ -610,24 +674,24 @@
               id="web-name"
               class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
             >
-              <h1 class="text-2xl font-semibold">REST Countries</h1>
+              <h1 class="lg:text-2xl text-xl font-semibold">REST Countries</h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="text-lg">
+              <p class="lg:text-lg text-sm">
                 This web shows a list of countries that are get from REST
                 Countries API. It also could show the detail of the country if
                 the card is clicked.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="text-lg">Tech:</p>
-              <div class="grid grid-cols-2 gap-4">
+              <p class="lg:text-lg text-sm">Tech:</p>
+              <div class="grid grid-cols-2 lg:gap-4 gap-1">
                 <svg
                   role="img"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-white"
+                  class="fill-white lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>Next.js</title>
@@ -640,7 +704,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   heigth="24"
-                  class="fill-[#06B6D4]"
+                  class="fill-[#06B6D4] lg:w-6 w-4 md:translate-y-0 translate-y-[4px]"
                   viewBox="0 -12 56 56"
                 >
                   <title>TailwindCSS</title>
@@ -657,7 +721,7 @@
         <!-- Social Links -->
         <div
           id="port-card"
-          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg lg:w-3/4 w-full h-60 border-2 border-cus-beige"
         >
           <div
             id="screenshot"
@@ -668,6 +732,7 @@
                 src="./img/screenshot/socials.png"
                 alt="Screenshot Social Links"
                 class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+                loading="lazy"
               />
             </a>
           </div>
@@ -680,24 +745,24 @@
               id="web-name"
               class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
             >
-              <h1 class="text-2xl font-semibold">Social Links</h1>
+              <h1 class="lg:text-2xl text-xl font-semibold">Social Links</h1>
             </div>
             <div id="web-desc" class="pl-2">
-              <p class="text-lg font-normal">
+              <p class="lg:text-lg text-sm font-normal">
                 This is a social media links that has links that will direct to
                 my social media. I also implement a language switcher between
                 English and Indonesia and a dark mode toggler.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="text-lg">Tech:</p>
-              <div class="grid grid-cols-3 gap-4">
+              <p class="lg:text-lg text-sm">Tech:</p>
+              <div class="grid grid-cols-3 lg:gap-4 gap-1">
                 <svg
                   role="img"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-[#f06529]"
+                  class="fill-[#f06529] lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>HTML5</title>
@@ -711,7 +776,7 @@
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-[#CC6699]"
+                  class="fill-[#CC6699] lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>Sass</title>
@@ -725,7 +790,7 @@
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-[#F7DF1E]"
+                  class="fill-[#F7DF1E] lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>JavaScript</title>
@@ -742,7 +807,7 @@
         <!-- Advice Generator -->
         <div
           id="port-card"
-          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg w-3/4 h-60 border-2 border-cus-beige"
+          class="flex flex-row bg-cus-maroon rounded-xl shadow-lg lg:w-3/4 w-full h-60 border-2 border-cus-beige"
         >
           <div
             id="screenshot"
@@ -756,6 +821,7 @@
                 src="./img/screenshot/advicegen.png"
                 alt="Screenshot Advice Generator"
                 class="object-cover h-full w-full rounded-s-xl hover:scale-110 transition ease-in-out duration-200"
+                loading="lazy"
               />
             </a>
           </div>
@@ -768,24 +834,26 @@
               id="web-name"
               class="w-full bg-cus-deep-brown rounded-tr-xl pl-2 py-2"
             >
-              <h1 class="text-2xl font-semibold">Advice Generator</h1>
+              <h1 class="lg:text-2xl text-xl font-semibold">
+                Advice Generator
+              </h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="text-lg">
+              <p class="lg:text-lg text-sm">
                 This is an advice generator that could generate random advice
                 the first time user enter it, and it also generate if the button
                 is clicked.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="text-lg">Tech:</p>
-              <div class="grid grid-cols-2 gap-4">
+              <p class="lg:text-lg text-sm">Tech:</p>
+              <div class="grid grid-cols-2 lg:gap-4 gap-1">
                 <svg
                   role="img"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  class="fill-white"
+                  class="fill-white lg:w-6 w-4"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <title>Next.js</title>
@@ -798,7 +866,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   heigth="24"
-                  class="fill-[#06B6D4]"
+                  class="fill-[#06B6D4] lg:w-6 w-4 md:translate-y-0 translate-y-[4px]"
                   viewBox="0 -12 56 56"
                 >
                   <title>TailwindCSS</title>
@@ -816,16 +884,19 @@
     <!-- End of Portfolio -->
 
     <!-- Contacts -->
-    <section id="contacts" class="flex flex-col gap-10 items-center pt-8">
-      <h1 class="text-3xl font-bold">My Contacts and Socials</h1>
-      <div class="grid grid-cols-4 gap-16">
+    <section
+      id="contacts"
+      class="flex flex-col lg:gap-10 gap-4 items-center lg:pt-8"
+    >
+      <h1 class="lg:text-3xl text-2xl font-bold">My Contacts and Socials</h1>
+      <div class="grid grid-cols-4 lg:gap-16 gap-4">
         <a href="mailto:farrelirsyadfanny@gmail.com" target="_blank">
           <svg
             role="img"
             width="42"
             height="42"
             viewBox="0 0 24 24"
-            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige"
+            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige lg:w-11 w-8"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>Gmail</title>
@@ -839,7 +910,7 @@
             width="42"
             height="42"
             viewBox="0 0 100 100"
-            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige"
+            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige lg:w-11 w-8"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -858,7 +929,7 @@
             width="42"
             height="42"
             viewBox="0 0 24 24"
-            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige"
+            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige lg:w-11 w-8"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>LinkedIn</title>
@@ -873,7 +944,7 @@
             width="42"
             height="42"
             viewBox="0 0 24 24"
-            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige"
+            class="fill-cus-ivory hover:fill-[#e0d4c7] active:fill-cus-beige lg:w-11 w-8"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>Instagram</title>
@@ -883,7 +954,9 @@
           </svg>
         </a>
       </div>
-      <h6 class="text-sm mt-6">Yep, that's it. Thank you for scrolling till the end.</h6>
+      <h6 class="text-sm mt-6">
+        Yep, that's it. Thank you for scrolling till the end.
+      </h6>
     </section>
     <!-- End of Contacts -->
 
