@@ -1,9 +1,10 @@
 const header = document.getElementById("header");
 const logo = document.querySelector("#logo");
 const sections = document.querySelector("#sections");
+const mblNavbar = document.querySelector("#mobile-navbar");
 const mblHeader = document.querySelector("#mobile-header");
 const mblMenu = document.querySelector("#mobile-menu");
-const menu = document.querySelector("#burger");
+const menuBtn = document.querySelector("#menuBtn");
 
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
@@ -22,6 +23,22 @@ function scrollToTop() {
 }
 
 function openNavBar() {
+  menuBtn.classList.toggle("active");
   mblMenu.classList.toggle("invisible");
-  menu.classList.toggle("stroke-cus-ivory");
+  mblHeader.classList.toggle("h-screen");
+  mblHeader.classList.toggle("bg-cus-deep-brown/75");
+  document.body.classList.toggle("overflow-hidden");
 }
+
+document.onclick = function (e) {
+  if (
+    !menuBtn.contains(e.target) &&
+    !mblMenu.contains(e.target) &&
+    !mblNavbar.contains(e.target)
+  ) {
+    menuBtn.classList.remove("active");
+    mblMenu.classList.add("invisible");
+    mblHeader.classList.remove("h-screen", "bg-cus-deep-brown/75");
+    document.body.classList.remove("overflow-hidden");
+  }
+};
