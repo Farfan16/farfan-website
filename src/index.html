@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <!-- <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="icon"
       href="./img/Logo-Circle.png"
@@ -24,6 +24,7 @@
     <header
       id="header"
       class="w-full fixed top-0 bg-stone-100/5 lg:flex lg:flex-row transition ease-in-out justify-center items-center px-4 py-2 gap-2 shadow-md z-10 hidden"
+      data-aos="fade-down"
     >
       <div id="logo" class="logo">
         <a href="">
@@ -50,15 +51,29 @@
     </header>
     <header id="mobile-header" class="lg:hidden fixed top-0 block w-full z-10">
       <nav
-      id="mobile-navbar"
+        id="mobile-navbar"
         class="flex flex-row justify-between w-full px-4 py-2 bg-cus-maroon"
+        data-aos="fade-down"
       >
-        <div id="logo-mobile" class="logo">
+        <div
+          id="logo-mobile"
+          class="logo"
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-duration="700"
+        >
           <a href="">
             <img src="./img/Logo.png" class="w-8" alt="Farfan Logo" />
           </a>
         </div>
-        <button onclick="openNavBar()" class="" id="menuBtn">
+        <button
+          onclick="openNavBar()"
+          class=""
+          id="menuBtn"
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="700"
+        >
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -89,19 +104,39 @@
       id="hero"
       class="h-screen max-h-[95vh] m-auto lg:p-0 px-6 flex lg:flex-row flex-col gap-14 justify-center items-center"
     >
-      <div class="border-cus-ivory border-2 rounded-full shadow-2xl">
+      <div
+        class="border-cus-ivory border-2 rounded-full shadow-2xl"
+        data-aos="md-fade-up"
+        data-lg-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-delay="500"
+      >
         <img
           src="./img/MyPicture.jpeg"
           alt="Picture of Farrel"
           class="object-cover rounded-full lg:w-80 lg:h-80 w-72 h-72"
         />
       </div>
-      <div class="lg:block hidden h-52 border-2 border-cus-ivory"></div>
-      <div class="lg:hidden block w-40 border-2 border-cus-ivory"></div>
-      <div class="flex flex-col gap-1 justify-start items-start max-w-2xl">
-        <h2 class="lg:text-7xl text-4xl">Hi, I'm Farrel Fanny.</h2>
-        <h3 class="lg:text-5xl text-2xl">I'm a Frontend Developer.</h3>
-        <p class="lg:text-xl text-lg mt-6">
+      <div
+        class="lg:block hidden h-52 border-2 border-cus-ivory"
+        data-aos="fade"
+      ></div>
+      <div
+        class="lg:hidden block w-40 border-2 border-cus-ivory"
+        data-aos="fade"
+      ></div>
+      <div
+        class="flex flex-col gap-1 justify-start lg:items-start md:items-center max-w-2xl"
+        data-aos="md-fade-down"
+        data-lg-aos="fade-right"
+        data-aos-delay="1000"
+        data-aos-duration="700"
+      >
+        <h2 class="lg:text-7xl md:text-5xl text-4xl">Hi, I'm Farrel Fanny.</h2>
+        <h3 class="lg:text-5xl md:text-3xl text-2xl">
+          I'm a Frontend Developer.
+        </h3>
+        <p class="lg:text-xl lg:text-left md:text-center text-lg mt-6">
           I have 2 years of experience in frontend developed a website. Scroll
           down to see tech that I used and some of my portfolio.
         </p>
@@ -115,13 +150,22 @@
       class="flex lg:flex-row flex-col justify-center items-center gap-8 m-auto lg:px-16 lg:py-12 px-6 py-10 w-full h-full text-cus-beige bg-stone-100"
     >
       <div
-        class="flex flex-col justify-center items-start lg:w-2/5 w-full gap-12"
+        class="flex flex-col justify-center lg:items-start md:items-center items-start lg:w-2/5 w-full gap-12"
       >
-        <h2 class="lg:text-7xl text-5xl text-left font-semibold">
+        <h2
+          class="lg:text-7xl text-5xl lg:text-left md:text-center text-left font-semibold"
+          data-aos="fade-down"
+          data-aos-offset="100"
+        >
           Little About Me
         </h2>
-        <div id="desc" class="text-wrap max-w-lg">
-          <p class="lg:text-xl text-lg">
+        <div
+          id="desc"
+          class="text-wrap max-w-lg"
+          data-aos="fade-up"
+          data-aos-offset="100"
+        >
+          <p class="lg:text-xl text-lg lg:text-left md:text-center text-left">
             You can call me Farrel. I'm a frontend or web developer with about 2
             years of freelance experience, and I'm based in Indonesia. I got my
             degree in computer science in 2023, and although my experience is in
@@ -131,7 +175,10 @@
         </div>
       </div>
       <div
-        class="lg:border-4 lg:border-l-cus-beige lg:border-b-cus-beige border-2 border-cus-beige shadow-2xl lg:w-[28rem] lg:h-[30rem] w-80 h-72 relative"
+        class="lg:border-4 lg:border-l-cus-beige lg:border-b-cus-beige lg:border-t-0 lg:border-r-0 border-2 border-cus-beige shadow-2xl lg:w-[28rem] lg:h-[30rem] w-80 h-72 relative"
+        data-aos="fade"
+        data-aos-offset="50"
+        data-aos-duration="700"
       >
         <img
           src="./img/tiduran.jpg"
@@ -148,14 +195,24 @@
       id="skillset"
       class="flex flex-col items-center md:px-16 py-12 w-full"
     >
-      <h2 class="lg:text-7xl text-5xl font-semibold mb-8">Skill Set</h2>
+      <h2 class="lg:text-7xl text-5xl font-semibold mb-8" data-aos="fade">
+        Skill Set
+      </h2>
       <div
-        class="md:grid md:grid-cols-4 flex flex-row justify-start items-start lg:gap-16 gap-10 py-10 lg:px-44 px-4 w-full overflow-auto overscroll-auto border-4 shadow-2xl border-cus-maroon rounded-xl bg-cus-ivory"
+        class="md:grid md:grid-cols-4 flex flex-row justify-start items-start justify-items-center lg:gap-16 gap-10 py-10 lg:px-44 px-4 w-full overflow-auto overscroll-auto border-4 shadow-2xl border-cus-maroon rounded-xl bg-cus-ivory"
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
       >
         <!-- HTML Card -->
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out duration-300 hover:scale-110 group-hover:-translate-y-1 hover:bg-[#9C2F18] hover:text-white"
+          data-aos="fade-down"
+          data-aos-delay="50"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -185,6 +242,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#0E4A80] hover:scale-110 hover:-translate-y-1 hover:text-white duration-300"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -214,6 +274,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#1E201E] hover:scale-110 hover:-translate-y-1 duration-300"
+          data-aos="fade-down"
+          data-aos-delay="150"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -245,6 +308,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#141414] hover:scale-110 hover:-translate-y-1 duration-300"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -276,6 +342,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-black hover:scale-110 hover:-translate-y-1 hover:text-white duration-300"
+          data-aos="fade-down"
+          data-aos-delay="250"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -305,6 +374,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#E5E5E5] hover:scale-110 hover:-translate-y-1 duration-300"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -336,6 +408,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#8A4063] hover:scale-110 hover:-translate-y-1 hover:text-white duration-300"
+          data-aos="fade-down"
+          data-aos-delay="350"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -365,6 +440,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#505478] hover:scale-110 hover:-translate-y-1 hover:text-white duration-300"
+          data-aos="fade-down"
+          data-aos-delay="400"
+          data-aos-offset="300"
         >
           <div
             id="logo"
@@ -394,6 +472,9 @@
         <div
           id="card"
           class="flex flex-col md:col-start-2 justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#E5E5E5] hover:scale-110 hover:-translate-y-1 duration-300"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-offset="200"
         >
           <div
             id="logo"
@@ -404,7 +485,7 @@
               width="64"
               height="64"
               viewBox="0 0 24 24"
-              class="group-hover:fill-[#F05138]"
+              class="group-hover:fill-[#F05138] group-hover:scale-95 transition ease-in-out duration-300"
               xmlns="http://www.w3.org/2000/svg"
             >
               <title>Swift</title>
@@ -425,6 +506,9 @@
         <div
           id="card"
           class="flex flex-col justify-center items-center bg-cus-deep-brown w-fit h-fit rounded-xl shadow-xl group cursor-pointer transition ease-in-out hover:bg-[#1A1A1A] hover:scale-110 hover:-translate-y-1 duration-300"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-offset="200"
         >
           <div
             id="logo"
@@ -435,7 +519,7 @@
               width="64"
               height="64"
               viewBox="0 0 24 24"
-              class="group-hover:fill-[#0484fb]"
+              class="group-hover:fill-[#0484fb] group-hover:scale-95 transition ease-in-out duration-300"
               xmlns="http://www.w3.org/2000/svg"
             >
               <title>Swift</title>
@@ -458,21 +542,31 @@
     <!-- Portfolio -->
     <section
       id="portfolio"
-      class="flex lg:flex-row flex-col items-stretch w-full h-screen my-10 text-cus-beige bg-stone-200"
+      class="flex lg:flex-row flex-col items-stretch w-full h-screen my-10 text-cus-beige bg-stone-200 overflow-x-hidden"
     >
       <div
         class="flex flex-col lg:w-1/3 w-full lg:min-h-full h-1/4 justify-center items-center gap-2"
+        data-aos="md-fade-down"
+        data-aos-once="false"
+        data-aos-offset="200"
+        data-aos-duration="1000"
       >
         <h2 class="lg:text-7xl text-5xl font-semibold">Portfolio</h2>
-        <h3 class="text-xl">
-          <span class="lg:block hidden">Click</span>
-          <span class="lg:hidden">Tap</span> the image to go to the website.
+        <h3 class="text-xl lg:block hidden">
+          Click the image to go to the website.
+        </h3>
+        <h3 class="text-xl lg:hidden block">
+          Tap the image to go to the website.
         </h3>
       </div>
 
       <div
         id="port-side"
         class="flex flex-col gap-6 lg:w-2/3 w-full lg:min-h-full h-3/4 lg:p-8 p-6 justify-start items-center bg-stone-300 rounded-l-xl shadow-l-shadow overflow-y-auto overscroll-y-auto"
+        data-aos="md-slide-up"
+        data-aos-duration="1000"
+        data-aos-anchor="#skillset"
+        data-aos-anchor-placement="bottom-center"
       >
         <!-- Nayaka -->
         <div
@@ -506,13 +600,13 @@
               </h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="lg:text-lg text-sm font-normal">
+              <p class="lg:text-lg md:text-base text-sm font-normal">
                 This is 1 of a few project that my friends and I did. We only
                 did the layout and UI part. My work is to make the “About Us”.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="lg:text-lg text-sm">Tech:</p>
+              <p class="lg:text-lg md:text-base text-sm">Tech:</p>
               <div class="grid grid-cols-3 lg:gap-4 gap-1">
                 <svg
                   role="img"
@@ -591,14 +685,14 @@
               <h1 class="lg:text-2xl text-xl font-semibold">Weather App</h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="lg:text-lg text-sm">
+              <p class="lg:text-lg md:text-base text-sm">
                 A web to give information about current weather on the searched
                 area. It&#39;ll give info about the weather, temprature, and
                 also show the date.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="lg:text-lg text-sm">Tech:</p>
+              <p class="lg:text-lg md:text-base text-sm">Tech:</p>
               <div class="grid grid-cols-2 lg:gap-4 gap-1">
                 <svg
                   role="img"
@@ -662,14 +756,14 @@
               <h1 class="lg:text-2xl text-xl font-semibold">REST Countries</h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="lg:text-lg text-sm">
+              <p class="lg:text-lg md:text-base text-sm">
                 This web shows a list of countries that are get from REST
                 Countries API. It also could show the detail of the country if
                 the card is clicked.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="lg:text-lg text-sm">Tech:</p>
+              <p class="lg:text-lg md:text-base text-sm">Tech:</p>
               <div class="grid grid-cols-2 lg:gap-4 gap-1">
                 <svg
                   role="img"
@@ -733,14 +827,14 @@
               <h1 class="lg:text-2xl text-xl font-semibold">Social Links</h1>
             </div>
             <div id="web-desc" class="pl-2">
-              <p class="lg:text-lg text-sm font-normal">
+              <p class="lg:text-lg md:text-base text-sm font-normal">
                 This is a social media links that has links that will direct to
                 my social media. I also implement a language switcher between
                 English and Indonesia and a dark mode toggler.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="lg:text-lg text-sm">Tech:</p>
+              <p class="lg:text-lg md:text-base text-sm">Tech:</p>
               <div class="grid grid-cols-3 lg:gap-4 gap-1">
                 <svg
                   role="img"
@@ -824,14 +918,14 @@
               </h1>
             </div>
             <div id="web-desc" class="px-2">
-              <p class="lg:text-lg text-sm">
+              <p class="lg:text-lg md:text-base text-sm">
                 This is an advice generator that could generate random advice
                 the first time user enter it, and it also generate if the button
                 is clicked.
               </p>
             </div>
             <div id="web-tech" class="pl-2 flex flex-row gap-2">
-              <p class="lg:text-lg text-sm">Tech:</p>
+              <p class="lg:text-lg md:text-base text-sm">Tech:</p>
               <div class="grid grid-cols-2 lg:gap-4 gap-1">
                 <svg
                   role="img"
@@ -946,5 +1040,9 @@
     <!-- End of Contacts -->
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
