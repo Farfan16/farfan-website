@@ -31,3 +31,23 @@ body {
 #sections.scrolled {
   transform: translateX(30vw);
 }
+
+.line1, .line2, .line3 {
+  width: 32px;
+  height: 4px;
+  margin: 5px 8px;
+  background-color: #d4c4b7;
+  transition: 0.2s;
+}
+
+.active .line1 {
+  transform: translate(0px, 9px)rotate(45deg);
+}
+
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: translate(0px, -9px)rotate(-45deg);
+}

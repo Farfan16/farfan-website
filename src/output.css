@@ -848,10 +848,6 @@ video {
   background-color: rgb(44 27 24 / var(--tw-bg-opacity, 1));
 }
 
-.bg-cus-deep-brown\/75 {
-  background-color: rgb(44 27 24 / 0.75);
-}
-
 .bg-cus-ivory {
   --tw-bg-opacity: 1;
   background-color: rgb(212 196 183 / var(--tw-bg-opacity, 1));
@@ -879,6 +875,10 @@ video {
 .bg-stone-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(214 211 209 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cus-deep-brown\/75 {
+  background-color: rgb(44 27 24 / 0.75);
 }
 
 .fill-\[\#06B6D4\] {
@@ -1081,6 +1081,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1125,6 +1131,26 @@ body {
 
 #sections.scrolled {
   transform: translateX(30vw);
+}
+
+.line1, .line2, .line3 {
+  width: 32px;
+  height: 4px;
+  margin: 5px 8px;
+  background-color: #d4c4b7;
+  transition: 0.2s;
+}
+
+.active .line1 {
+  transform: translate(0px, 9px)rotate(45deg);
+}
+
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: translate(0px, -9px)rotate(-45deg);
 }
 
 .hover\:-translate-y-1:hover {
