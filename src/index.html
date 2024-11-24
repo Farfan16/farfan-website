@@ -48,8 +48,11 @@
         >
       </div>
     </header>
-    <header class="lg:hidden fixed top-0 block w-full z-10">
-      <nav class="flex flex-row justify-between w-full px-4 py-2 bg-cus-deep-brown/75">
+    <header id="mobile-header" class="lg:hidden fixed top-0 block w-full z-10">
+      <nav
+      id="mobile-navbar"
+        class="flex flex-row justify-between w-full px-4 py-2 bg-cus-maroon"
+      >
         <div id="logo-mobile" class="logo">
           <a href="">
             <img src="./img/Logo.png" class="w-8" alt="Farfan Logo" />
@@ -58,31 +61,23 @@
         <button onclick="openNavBar()">
           <?xml version="1.0" encoding="utf-8"?>
           <svg
+            id="burger"
             width="32px"
             height="32px"
             viewBox="0 0 24 24"
             class="stroke-cus-beige"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M4 18L20 18"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 12L20 12"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 6L20 6"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
+            <path d="M4 18L20 18" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round" />
           </svg>
         </button>
       </nav>
-      <!-- <div class="flex flex-col justify-start items-center w-full gap-4 bg-cus-deep-brown/75">
+      <div
+        id="mobile-menu"
+        class="flex flex-col justify-start items-center w-full gap-4 py-4 bg-cus-deep-brown invisible"
+      >
         <a href="#about" class="hover:text-cus-ivory active:text-cus-maroon"
           >About</a
         >
@@ -95,7 +90,7 @@
         <a href="#contacts" class="hover:text-cus-ivory active:text-cus-maroon"
           >Contacts</a
         >
-      </div> -->
+      </div>
     </header>
     <!-- End of Header -->
 
